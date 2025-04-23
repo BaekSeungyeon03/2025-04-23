@@ -1,0 +1,340 @@
+<!doctype html>
+<head>
+    <title>짠테크</title>
+    <meta charset="utf-8">
+</head>
+
+<style>
+    body{
+        background-color: rgb(255, 254, 251);
+    }
+    #logo {
+    color: #276EF1;
+    font-size: 10px; 
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+    border-bottom: 2px solid #276EF1;
+    margin-bottom: 20px;
+    }
+    .title-row {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    padding: 0 50px;
+    gap: 20px; /* 제목과 박스 사이 간격 */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #276EF1;
+}
+
+.title-row h1 {
+    color: #276EF1;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 80px;
+    margin: 0;
+    text-align: left;
+}
+
+.title-row .box {
+    width: 130px;
+    height: 50px;
+    background-color: #276EF1;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    color: rgb(248, 246, 236);
+    border-radius: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.좌측배열묶기 {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 0 40px;
+}
+.article-info {
+  width: 200px;
+  margin-right: 40px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.info-category {
+  font-weight: 700;
+  font-size: 13px;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.info-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.info-label {
+  font-weight: 400;
+  color: #888;
+}
+
+.info-data {
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.info-share {
+  margin-top: 10px;
+  border-top: 2px solid #1a1a1a;
+  padding-top: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.share-button {
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  padding: 5px 8px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #1a1a1a;
+  transition: background0.2s;
+}
+.share-button:hover {
+  background-color: #276EF1;
+  color: white;
+}
+
+#긍부{
+    display: grid;
+        grid-template-columns:50% 1fr ;
+}
+#기사제목{
+    color: #276EF1;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.긍정기사이미지 {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+.부정기사이미지 {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+#긍 p{
+    color: #276EF1;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: left;
+}
+#부 p{
+    color: rgb(248, 246, 236);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 45px;
+    font-weight: 100;
+    text-align: left;
+}
+#긍{
+    padding: 20px;
+    background-color: rgba(236, 246, 248, 0.787)
+}
+
+#부{
+    padding: 20px;
+    background-color:#276EF1 ;
+}
+#긍 .본문{
+    color: #276EF1;
+    font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: left;
+}
+.긍정기사원문링크상자{ 
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #276EF1;
+  color: white;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.긍정기사원문링크상자:hover {
+  background-color: #1a4fbf;
+}
+.부정기사원문링크상자{ 
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(248, 246, 236);
+  color: #276EF1;
+  font-size: 16px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.부정기사원문링크상자:hover {
+  background-color: #e2eaf3;
+}
+
+#부 .본문{
+    color: rgb(248, 246, 236);
+    font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 100;
+        font-size: 20px;
+        text-align: left;
+}
+#긍 h2{
+    color:#276EF1;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: left;
+}
+
+#부 h2{
+    color: rgb(248, 246, 236);
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: 200;
+    text-align: left;
+}
+ul.조원들이름{
+        position: relative;
+        top: 300px;
+        background-color:  #276EF1;
+        border: 10px solid #276EF1;
+        list-style-type:none;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+    li.dualpick{
+        color: rgb(253, 252, 248);
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 400;
+        font-size: 40px; 
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        background-color: #276EF1;
+    }
+    li.이름{
+        color: rgb(253, 252, 248);
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        padding-top:0;
+        padding-bottom: 3px;
+        padding-left: 5px;
+        margin: 0 auto;
+    }
+</style>
+
+<body>
+    <div id="logo">NEWS LETTER</div>
+    <div class="title-row">
+        <h1>DualPick</h1>
+        <div class="box">ECONOMY</div>
+      </div>
+    <div class="좌측배열묶기">
+    <aside class="article-info">
+        <div class="info-category">경제 ECONOMY</div>
+      
+        <ul class="info-list">
+          <li>
+            <span class="info-label">작성자</span>
+            <span class="info-data">백승연</span>
+          </li>
+          <li>
+            <span class="info-label">읽음</span>
+            <span class="info-data">18891</span>
+          </li>
+          <li>
+            <span class="info-label">작성일</span>
+            <span class="info-data">2025.04.22</span>
+          </li>
+          <li class="info-share">
+            <span class="info-label">공유</span>
+            <a href="#" class="share-button">↗</a>
+          </li>
+        </ul>
+      </aside>
+      
+
+    <div id="긍부">
+        <div id="긍">
+        <p id="기사제목">"일주일 14만원쯤 번 셈이죠"…요즘 MZ들 푹 빠진 '짠테크'</p>
+        <img src="jjantec_po.jpg" class="긍정기사이미지">
+            <div class="내용">
+                <h2>접속과 출석만으로 쌓이는 포인트, MZ가 돈 줍는 법</h2>
+                <div class="본문">
+                    20대 직장인 A씨는 요즘 매일 수시로 금융 애플리케이션에 접속한다. 일정 걸음걸이를 달성할 때마다 주는 포인트를 적립하고, 앱 내 반려동물에 먹이를 주는 미션을 수행하기 위해서다. A씨는 이렇게 모은 포인트를 이용해 커피 교환권 등을 구매해 소소한 지출을 줄이고 있다. 일명 ‘짠테크’(짜다+재테크 합성어)가 MZ세대를 중심으로 인기를 끌고 있다. 고물가에 예금금리는 떨어지면서 지출을 줄이려는 ‘무 지출 챌린지’ 열풍과 함께 주목받는 하나의 현상이다. MZ세대들은 온라인 커뮤니티 등을 통해 짠테크 비법과 성과를 공유하며 동기부여를 자극하는 데 적극적이다. 은행권은 게임과 결합한 형태의 ‘00키우기’ 짠테크가 대세다. 게임 수행을 통해 재미를 느껴 앱 접속 빈도를 높여 마케팅 효과를 극대화하기 위한 전략이다. 우리은행은 지난달 우리원(WON)뱅킹에서 반려동물 캐릭터를 키우며 경품도 받을 수 있는 출석·임무 수행 보상형 서비스 바크앤뱅크(Bark&Bank)를 출시했다. 반려동물을 최종 성장단계(5단계)까지 키운 고객은 커피, 햄버거 등 자신이 선택한 선물을 받을 수 있다.앞서 지난 3월 케이뱅크는 ‘돈나무 키우기’로 짠테크족(族)을 공략한 바 있다. 매일 케이뱅크 앱에 출석해 온도관리·물주기·비료 주기 등 다양한 미션을 수행하면서 돈나무를 최종 성장단계(7단계)까지 키우는 게 목표다. 미션에 성공하면 100원에서 최대 10만원까지 현금 보상을 받을 수 있다. 돈나무를 키우고 수확하기까지 빠르면 사흘 만에 가능하다. 서비스 출시 3주 만에 60만명이 27만 그루의 나무를 키웠을 정도로 인기를 끌었다. 지출관리를 제한하는 형태의 서비스도 돋보인다. 뱅크샐러드는 지난 6월 합동 절약 게임인 ‘샐러드게임’ 참가팀을 모집했다. 애초 600팀(3000명)을 목표로 했지만, 신청 인원이 예상을 웃돌면서 1000팀(5000명)으로 규모를 키웠다. 샐러드게임은 닷새 간 5명의 팀원이 미리 설정한 예산 내에서 지출하면 지출 금액만큼 상금을 돌려받는 구조다. 지난 6월24~28일 진행한 1차 샐러드게임에선 참여자 5000명(1000팀) 중 1460명(320팀)이 게임에 성공했고 이들은 직전 주 대비 평균 14만원가량 절약했다. 토스의 ‘무 지출 챌린지’는 마이데이터(본인신용정보관리업)를 기반으로 1일간 카드 사용내역을 확인한 뒤 지출내역이 없다면 다음날 일정 포인트를 지급하는 서비스다. 무 지출을 일주일간 성공하면 추가로 포인트를 제공하고 하루 실패 시 ‘되돌리기’ 기능을 이용할 수 있다. 캐시워크는 짠테크앱의 대명사다. 캐시워크는 일정 걸음 수마다 현금성 포인트를 지원하며 특정 시간대에 특정 기업에 관한 퀴즈를 푸는 ‘돈 버는 퀴즈’도 이용자들이 애용하고 있다. 최소 수십원에서 수만원까지 캐시를 지급한다. 금융권 관계자는 “짠테크는 소비자들의 앱 방문 횟수를 늘려 마케팅 효과도 있다”며 “고물가 상황에서 당분간 관련 서비스는 확대할 것이다”고 말했다.
+                </div>
+            </div>
+            <a href="https://www.edaily.co.kr/News/Read?newsId=01341526639019136&mediaCodeNo=257&OutLnkChk=Y" target="_blank" class="긍정기사원문링크상자"> 기사 원문 보기</a>
+
+        </div>
+
+        <div id="부">
+            <p id="기사제목">2030세대 '짠테크' 열풍 속 부작용 주의</p>
+            <img src="jjantec_ne.jpg" class="부정기사이미지">
+                <div class="내용">
+                    <h2>소액 수익에 끌린 청년들, 디지털 절약 앱 남용으로 인한 부작용 우려 커져</h2>
+                    <div class="본문">
+                        고물가와 고금리 상황이 장기화되면서, 2030세대 청년들 사이에서 ‘짠테크’ 열풍이 거세게 불고 있다. 불필요한 소비를 줄이고 디지털 앱을 활용해 소액을 모으는 ‘디지털 짠테크’는 자산 형성의 새로운 방식으로 주목받고 있지만, 그 이면에는 부작용에 대한 우려도 커지고 있다.
+                        서울 서대문구에서 만난 한 청년은 “시장에 가면 야채값도 너무 많이 올랐고, 점심 외식 비용도 부담된다”며 체감 물가 상승의 어려움을 전했다. 실제로 짠테크를 활용해 경제적 부담을 줄이려는 청년들이 늘고 있다. 한 시장조사 전문기업이 전국 성인 남녀 1천 명을 대상으로 조사한 결과, 응답자의 87.9%가 짠테크를 ‘필수’라고 답했고, 실제로 경험한 사람들도 많았다. 청년층은 주로 금융앱이나 포인트 적립 앱을 활용해 적은 금액이라도 꾸준히 모으는 방식으로 생활비 부담을 줄이고 있다. 경기도 평택시에 거주하는 조하나 씨는 “하루에 100원 정도라도 모을 수 있도록 매일 앱 접속을 하고, 친구 추천 같은 활동도 한다”고 전했다. 또 다른 청년 조형찬 씨는 만보기 기능과 설문조사 앱을 활용해 한 달에 5천 원에서 1만 원 정도를 적립한다며, “월급 외에 소득이 없기 때문에 작은 수익이라도 생활에 도움이 된다”고 말했다. 이처럼 짠테크는 앱에 접속해 출석 체크를 하거나 특정 장소를 방문하고, 퀴즈나 룰렛 이벤트 등에 참여하면서 보상을 받는 구조다. 한 앱은 하루 1만 보를 달성하면 40원을, 특정 장소 방문 시 최대 100원을 지급하기도 한다. 이러한 흐름은 청년층의 경제적 자구 노력으로 평가받고 있지만, 동시에 몇 가지 주의할 점도 지적되고 있다.
+전문가들은 짠테크의 무분별한 앱 활용이 개인정보 유출로 이어질 수 있다고 경고한다.
+이은희 인하대 소비자학과 교수는 “짠테크를 하면서 다양한 앱에 가입하고, 정보를 제공하다 보면 어느 순간 개인정보가 여러 곳에 분산되며 유출 위험이 커질 수 있다”고 지적했다. 실제로 많은 앱이 위치 정보, 활동 이력, 연락처 접근 등을 요구하면서 보안 사각지대가 우려되는 상황이다.
+또한, 일부 청년들은 수익을 올리기 위해 앱 과제에 지나치게 매달리면서 시간 낭비와 스트레스를 호소하기도 한다. “하루 100원 적립을 위해 매일 접속하고, 퀴즈도 풀고, 설문도 해야 한다. 어느 순간 피로감이 쌓인다”는 사용자들의 목소리도 들려온다. 짠테크는 소액 수익을 통한 절약 습관 형성에 도움이 될 수 있지만, 과도한 앱 의존, 낮은 수익성, 개인정보 유출 위험 등 부작용도 함께 존재한다.
+따라서 짠테크를 시작하려는 청년이라면, 신뢰할 수 있는 앱을 선별해 사용하고, 개인정보 제공 범위를 꼼꼼히 확인하는 자세가 필요하다. 디지털 짠테크가 새로운 재테크 방식으로 자리 잡기 위해서는 단순한 ‘소액 수익’ 이상의 정보보호 인식과 사용자의 신중한 판단이 함께 따라야 할 시점이다.
+                    </div>
+                    <a href="https://www.ktv.go.kr/content/view?content_id=691822" target="_blank" class="부정기사원문링크상자"> 기사 원문 보기</a>
+
+                </div>
+        </div>
+    </div>
+  </ol>
+</div>
+</div>
+<ul class="조원들이름">
+    <li class="dualpick">DualPick</li>
+    <li class="이름">백승연 Baek SeungYeon</li>
+    <li class="이름">이예진 Lee YeJin</li>
+    <li class="이름">정은주 Jeong EunJu</li>
+    <li class="이름">최수진 Choi SuJin</li>
+</ul>    
+
+</body>
+</html>
